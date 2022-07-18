@@ -1,11 +1,9 @@
 # Note Taker
-Users can take notes and save it using node.js.
+Users can take notes and save it using node.js using this app.
 
 ### Github : https://github.com/fumixer/note-taker
 
-### Deployed app :
-
-
+### Deployed app : https://gentle-waters-75490.herokuapp.com/
 
 ### Screenshots
 
@@ -15,6 +13,7 @@ Users can take notes and save it using node.js.
 * node.js
 * npm
 * inquire
+* uuid
 * Bootstrap
 
 ![licence badge](https://img.shields.io/badge/license-MIT-orange.png)
