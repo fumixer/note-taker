@@ -4,7 +4,7 @@ const express = require('express');
 // Set PORT
 const PORT = process.env.PORT || 3001;
 
-// Create an express server
+// Express.js: Create an express server
 const app = express();
 
 // Point Server to the route files
@@ -13,16 +13,16 @@ const htmlRoutes = require('./routes/htmlRoutes');
 
 // Parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
-
 // Parse incoming JSON data
 app.use(express.json());
+// Provide file path to a location in our app and insturct the server to make these files static resouces
 app.use(express.static('public'));
 
-//Use apiRoutes
+// Use apiRoutes
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-// Listener
+// Make our server to listen
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
