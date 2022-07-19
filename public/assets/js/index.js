@@ -1,3 +1,4 @@
+//this is from starter code
 let noteTitle;
 let noteText;
 let saveNoteBtn;
